@@ -1,0 +1,153 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(83, 143, 110);
+    color: #eee;
+    font-family: 'Courier New', Courier, monospace;
+    height: 100vh;
+}
+
+header h1{
+    background-color: rgb(48, 100, 71);
+    padding: 3rem;
+    text-align: right;
+    font-size: 2.5rem;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 70vh;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container p{
+    margin: 2rem 0;
+    background-color: rgba(48, 100, 71, 0.753);
+    padding: 1.3rem;
+    border-radius: 1rem;
+    width: 22rem;
+}
+
+.form-section h4{
+    width: 25rem;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+.form-section input, label{
+    display: block;
+    display: flex;
+}
+
+.form-section input{
+    outline: none;
+    padding: .7rem;
+    margin: .2rem 0;
+    border-radius: .3rem;
+    border: .15rem solid rgb(83, 143, 110);
+}
+
+.form-section input:focus{
+    border: .15rem solid rgb(48, 100, 71);
+}
+
+.btn{
+    padding: .5rem 2rem;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    letter-spacing: .1rem;
+    font-weight: bold;
+    color: rgb(48, 100, 71);
+    border: 1px solid rgb(48, 100, 71);
+    border-radius: .3rem;
+    outline: none;
+}
+
+.btn:hover{
+    background-color: rgb(48, 100, 71);
+    color: #eee;
+}
+
+.btn:active{
+    border:rgb(83, 143, 110) 1px solid;
+}
+
+.hide {
+    display: none;
+}
+
+.search-info{
+    position: relative;
+    width: 60%;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    margin: 1rem;
+    padding: 5rem 2.5rem;
+    border-radius: .8rem;
+    background-color: rgba(48, 100, 71, 0.993);
+    z-index: 10;
+}
+
+.close-modal{
+    position: absolute;
+    right: .7rem;
+    top: .3rem;
+    outline: none;
+    padding: .15rem .3rem;
+    font-size: 2rem;
+    border: none;
+    border-radius: .4rem;
+    text-align: center;
+    cursor: pointer;
+    background: none;
+    color: #eee;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: 5;
+  }
+  
+
+footer{
+    background-color: rgba(48, 100, 71, 0.753);
+    padding: 2rem;
+    text-align: right;
+}
+
+
+
+
+@media only screen and (max-width: 600px){
+    .container{
+        width: 90%;
+    }
+
+    main{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .container p{
+        max-width: 20rem;
+    }
+}
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid 19 info</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Covid 19</h1>
+    </header>
+
+    <!-- Box that appear when submitting button -->
+    <div class="search-info hide">
+        <button class="close-modal">&times;</button>
+        <h4 class="info"></h4>
+    </div>
+    <div class="overlay hide"></div>
+
+    <!-- Container for "main"-sections -->
+    <main class="container">
+
+        <!-- Section with the form to fill in -->
+        <section class="form-section">
+            <h4>Get info about covid-19 in the country you want.</h4>
+            <form method="get" autocomplete="on">
+                <label for="search">Search country</label>
+                <input type="text" name="search" id="search" class="country-search" placeholder="Country name...">
+                <button type="search" name="search" class="btn submit" id="btn">Submit</button>
+            </form>
+        </section>  
+
+        <!-- Section with a text-box -->
+        <section>
+            <p>While we are hoping for happier times, Covid 19 is still out there, in the whole world. Let´s stay strong together, but further apart. Let's hope that we'd soon be able to see and hug each other again!</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <small>Sofia Hervéus &copy; 2021</small>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
