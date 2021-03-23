@@ -7,6 +7,7 @@ const overlay = document.querySelector(".overlay");
 const btnCloseModal = document.querySelector(".close-modal");
 const form = document.querySelector(".container");
 const infoText = document.querySelector(".info");
+const footer = document.querySelector(".footer");
 let countryChoise = document.querySelector(".country-search");
 
 
@@ -40,6 +41,7 @@ const openModal = () => {
     info.classList.remove("hide");
     overlay.classList.remove("hide");
     form.classList.add("hide");
+    footer.classList.add("hide");
 }
 
 //funktion som stänger rutan med info. Lägger till formuläret osv igen.
@@ -47,6 +49,7 @@ const closeModal = () => {
     info.classList.add("hide");
     overlay.classList.add("hide");
     form.classList.remove("hide");
+    footer.classList.remove("hide");
 }
 
 //Lägg till en eventlisternet med click för sökknappen. preventDefault gör så att sidan inte laddar om vid submit.
