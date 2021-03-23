@@ -32,7 +32,7 @@ const requestData = (choice) => {
     // Ifall man skriver in fel i sökfältet så skrivs errorn ut.
     .catch(error => {
         console.log("Error!")
-    infoText.innerHTML = `The first letter should be in uppercase, and make sure to type in the country name in english.`})
+        infoText.innerHTML = `The first letter should be in uppercase, and make sure to type in the country name in english.`})
 }
 
 // funktion för att öppna rutan med info, tar även bort lite saker i bakgrunden för att de ska se lite renare ut.
