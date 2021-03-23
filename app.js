@@ -18,21 +18,22 @@ const requestData = (choice) => {
     .then(data => {
         // console.log(data.All) // //Console.loggar datan man får ut...
 
-        infoText.innerHTML = `<h4><u>${data.All.country}</u>:</h4>
+        infoText.innerHTML = `<h2><u>${data.All.country}</u>:</h2>
         <br><p>There has been ${data.All.confirmed} confirmed infected by the virus. </p>
         <p>At this point ${data.All.deaths} have died due to corona. </p>
         <p>They have confirmed ${data.All.recovered} recovered from the disease. </p>
         <p>The population of ${data.All.country} is ${data.All.population}. </p>
         <br>
-        <p><small>The last updated information came in at: </p>
-        <p>${data.All.updated}</small></p>`
+        <h6><small>The last updated information came in at: </h6>
+        <h5>${data.All.updated}</small></h5>`
        
     })
 
     // Ifall man skriver in fel i sökfältet så skrivs errorn ut.
     .catch(error => {
         console.log("Error!")
-        infoText.innerHTML = `The first letter should be in uppercase, and make sure to type in the country name in english.`})
+        infoText.innerHTML = `<h3><u>Error</u></h3>
+        <p>Make sure that the first letter is in uppercase, and the country name in english.</p>`})
 }
 
 // funktion för att öppna rutan med info, tar även bort lite saker i bakgrunden för att de ska se lite renare ut.
