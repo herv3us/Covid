@@ -61,3 +61,11 @@ searchBtn.addEventListener("click", (e) => {
 
 //Stänga knappen i boxen stänger ner boxen igen.
 btnCloseModal.addEventListener("click", closeModal);
+//Stäng boxen genom att trycka på overlay.
+overlay.addEventListener("click", closeModal);
+//stäng boxen om man trycker på escape-knappen.
+document.addEventListener("keydown", (e) => {
+    if(e.key === "Escape" && !info.classList.contains("hide")){
+        closeModal();
+    }
+});
