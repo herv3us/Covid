@@ -19,14 +19,13 @@ const requestData = (choice) => {
         // console.log(data.All) // //Console.loggar datan man får ut...
 
         infoText.innerHTML = `<h4><u>${data.All.country}</u>:</h4>
-        <br><p>There has been ${data.All.confirmed} confirmed infected. 
-        <br>${data.All.deaths} have died due to corona. 
-        <br>They have confirmed ${data.All.recovered} recovered from the disease. 
-        <br>The population of ${data.All.country} is ${data.All.population}. 
+        <br><p>There has been ${data.All.confirmed} confirmed infected by the virus. </p>
+        <p>At this point ${data.All.deaths} have died due to corona. </p>
+        <p>They have confirmed ${data.All.recovered} recovered from the disease. </p>
+        <p>The population of ${data.All.country} is ${data.All.population}. </p>
         <br>
-        <br>
-        <br><small>The last updated information came in at: 
-        <br>${data.All.updated}</small></p>`
+        <p><small>The last updated information came in at: </p>
+        <p>${data.All.updated}</small></p>`
        
     })
 
