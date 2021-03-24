@@ -40,6 +40,7 @@ const openModal = () => {
     overlay.classList.remove("hide");
     form.classList.add("hide");
     footer.classList.add("hide");
+    document.querySelector(".country-search").value = "";
 }
 
 //funktion som stänger rutan med info. Lägger till formuläret osv igen.
