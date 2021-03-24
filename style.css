@@ -26,6 +26,10 @@ header{
 
 header i{
     font-size: 4rem;
+    position: relative;
+    animation-name: icon;
+    animation-duration: 4s;
+
 }
 
 /* MAIN  */
@@ -159,6 +163,13 @@ footer{
     bottom: 0;
     width: 100%;
 }
+
+/* Animations */
+@keyframes icon {
+    0%   {color:rgb(48, 100, 71); left: -100px; top: 0px;}
+    50%  {color:rgba(238, 238, 238, 0.555); left:150px; top: 0px;}
+    100% {color:#eee; left:0px; top: 0px;}
+  }
 
 
 /* MEDIA QUERIS */

@@ -1,6 +1,4 @@
 //Deklarera variabler som tagits från DOM
-
-// const url = "https://covid-api.mmediagroup.fr/v1/cases/";
 const info = document.querySelector(".search-info");
 const searchBtn = document.querySelector(".btn");
 const overlay = document.querySelector(".overlay");
