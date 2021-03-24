@@ -10,6 +10,7 @@ body{
     height: 100vh;
     width: 100%;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 /* HEADER */
@@ -179,9 +180,9 @@ footer{
   }
 
 @keyframes box {
-    0% {background-color:rgba(83, 143, 110, 0); width: 10%; height: 30%;}
-    50% {background-color:rgba(83, 143, 110, 0.384); width: 30%; height: 40%;}
-    100% {background-color: rgba(48, 100, 71, 0.993); width: 60%; height: auto;}
+    0% {background-color:rgba(83, 143, 110, 0); width: 10%; height: 20%;}
+    50% {background-color:rgba(83, 143, 110, 0.384); width: 43%; height: 45%;}
+    100% {background-color: rgba(48, 100, 71, 0.993); width: 60%;}
 }
 
 @keyframes info {
